@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<div id="message-box">
+		<p>This is a very important message box!</p>
+	</div>
+
+	<button type="button" id="success" onclick="myFunction3()">Success</button>
+	<button type="button" id="error" onclick="myFunction2()">Error</button>
+	<button type="button" id="info" onclick="myFunction()">Info</button>
+
+	
+	<ul id="items">
+		<li>The first item is free!</li>
+	</ul>
+
+	<button type="button" id="add-item" onclick="myFunction4()">Add item</button>
+	
+	<ul>
+		<li>
+			This is the first item
+			<button type="button" class="remove-list-item" onclick="lel(this)">X</button>
+		</li>
+		<li>
+			This is the second item
+			<button type="button" class="remove-list-item" onclick="lel(this)">X</button>
+		</li>
+		<li>
+			This is the third item
+			<button type="button" class="remove-list-item" onclick="lel(this)">X</button>
+		</li>
+		<li>
+			This is the fourth item
+			<button type="button" class="remove-list-item" onclick="lel(this)">X</button>
+		</li>
+	</ul>
+	
+	<form id="apply-for-pet">
+		<h2>Ansökan om att skaffa husdjur</h2>
+			<input type="text" name="firstname"> Förnamn<br>
+			<input type="text" name="lastname"> Efternamn<br>
+			<input type="text" name="age"> Ålder<br>
+			<input type="text" name="email"> Epost<br>
+
+			<div id="pets">
+				<p>Typ av husdjur?</p>
+				<input type="radio" name="pet" value="dog" onclick="listen(this)"> Hund<br>
+				<input type="radio" name="pet" value="cat" onclick="listen(this)"> Katt<br>
+				<input type="radio" name="pet" value="fish" onclick="listen(this)"> Fisk<br>
+				<input type="radio" name="pet" value="bird" onclick="listen(this)"> Fågel<br>
+			</div>
+		<button onclick="lil()">Skicka ansökan</button>
+	</form>
+	<p id="lel"></p>
+
+   
+
+
+</script>
+</body>
+</html>
